@@ -223,7 +223,7 @@ Press `Space` + `a` to calculate the equation in the current line
 `,w` to go to the next `<++>` (placeholder) and then press `Enter` for you
 
 
-## Other Useful Stuff
+## 其他有用的东西
 
 #### Press `<SPACE>fd` to highlight adjacent duplicated words
 
@@ -237,4 +237,5 @@ Press `Space` + `a` to calculate the equation in the current line
 |  _  |  __/ | | (_) |
 |_| |_|\___|_|_|\___/
 ```
+
 
