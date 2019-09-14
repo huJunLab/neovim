@@ -1,43 +1,42 @@
-# My NeoVim Config (A NeoVim Config for Colemak Users)
+# 我的NeoVim配置 (A NeoVim Config for Colemak Users)
 
 ![demo](./demo.png)
 
 Please **DO NOT** just copy this config without really looking at it! Please, at least, read this README file!
 
-## After Installation, You Need To:
+## 安装后需要:
 
 - [ ] Install `pynvim` (pip)
 - [ ] Install `nodejs`
 - [ ] Install nerd-font (actually it's optional but it looks real good)
 
-## After Installation, You Might Want To:
+## 安装后，你可能希望 :
 
-#### First of all
+#### 首先
 - [ ] Do `:checkhealth`
 
-#### Config `Python` path
+#### 配置 `Python` path
 - [ ] Well, make sure you have python
 - [ ] See `_machine_specific.vim`
 
-#### For Code AutoComplete (coc)
+#### 对于 Code AutoComplete (coc)
 
 Python:
 - [ ] Do `pip3 install flake8` (for linting)
 
-#### For Taglist:
+#### 对于 Taglist:
 
 - [ ] Install `ctags` for function/class/variable list
 
-#### For inputing text ASCII art
+#### 对于 inputing text ASCII art
 - [ ] Install `figlet`
 
 ## Keyboard Shortcuts for `NORMAL` (`COMMAND`) Mode
 
-### 1 Basic Commands
+### 1 基本命令
 
-#### 1.1 The Most Basics
+#### 1.1 最基本的
 
-**`k`** : to switch to **`INSERT`** : mode, equals to key `i`
 
 **`Q`** : quit current vim window, equals to command `:q`
 
@@ -51,16 +50,16 @@ Python:
 
 | Command    | What it does                                              | Equivalent (QWERTY) |
 |------------|-----------------------------------------------------------|---------------------|
-| `u`        | Cursor up a terminal line                                 | `k`                 |
-| `e`        | Cursor down a terminal line                               | `j`                 |
-| `n`        | Cursor left                                               | `h`                 |
-| `i`        | Cursor right                                              | `l`                 |
-| `U`        | Cursor up 5 terminal lines                                | `5k`                |
-| `E`        | Cursor down 5 terminal lines                              | `5j`                |
-| `N`        | Cursor to the start of the line                           | `0`                 |
-| `I`        | Cursor to the end of the line                             | `$`                 |
-| `Ctrl` `u` | Move the view port up 5 lines without moving the cursor   | `Ctrl` `y`          |
-| `Ctrl` `e` | Move the view port down 5 lines without moving the cursor | `Ctrl` `e`          |
+| `k`        | Cursor up a terminal line                                 | `k`                 |
+| `j`        | Cursor down a terminal line                               | `j`                 |
+| `h`        | Cursor left                                               | `h`                 |
+| `l`        | Cursor right                                              | `l`                 |
+| `K`        | Cursor up 5 terminal lines                                | `5k`                |
+| `J`        | Cursor down 5 terminal lines                              | `5j`                |
+| `H`        | Cursor to the start of the line                           | `0`                 |
+| `L`        | Cursor to the end of the line                             | `$`                 |
+| `Ctrl` `k` | Move the view port up 5 lines without moving the cursor   | `Ctrl` `y`          |
+| `Ctrl` `j` | Move the view port down 5 lines without moving the cursor | `Ctrl` `e`          |
 | `h`        | Move to the end of this word                              | `e`                 |
 
 #### 1.3 Remapped Editor Commands
@@ -72,7 +71,7 @@ Python:
 
 | Command | What it does                          |
 |---------|---------------------------------------|
-| `<C-i>` | Go to the next cursor position        |
+| `<C-l>` | Go to the next cursor position        |
 | `<C-o>` | Go to the previous cursor position    |
 | `<C-a>` | Increase the number under cursor by 1 |
 | `<C-x>` | Decrease the number under cursor by 1 |
@@ -88,10 +87,10 @@ Python:
 
 | Command | What it does                                                                |
 |---------|-----------------------------------------------------------------------------|
-| `su`    | Create a new horizontal split screen and place it above the current window  |
-| `se`    | Create a new horizontal split screen and place it below the current window  |
-| `sn`    | Create a new vertical split screen and place it left to the current window  |
-| `si`    | Create a new vertical split screen and place it right to the current window |
+| `sk`    | Create a new horizontal split screen and place it above the current window  |
+| `sj`    | Create a new horizontal split screen and place it below the current window  |
+| `sh`    | Create a new vertical split screen and place it left to the current window  |
+| `sl`    | Create a new vertical split screen and place it right to the current window |
 | `sv`    | Set the two splits to be vertical                                           |
 | `sh`    | Set the two splits to be horizontal                                         |
 | `srv`   | Rotate splits and arrange splits vertically                                 |
@@ -102,10 +101,10 @@ Python:
 | Shortcut   | Action                         |
 |------------|--------------------------------|
 | `<SPACE>w` | Move cursor to the next window |
-| `<SPACE>n` | Move cursor one window left    |
-| `<SPACE>i` | Move cursor one window right   |
-| `<SPACE>u` | Move cursor one window up      |
-| `<SPACE>e` | Move cursor one window down    |
+| `<SPACE>h` | Move cursor one window left    |
+| `<SPACE>l` | Move cursor one window right   |
+| `<SPACE>k` | Move cursor one window up      |
+| `<SPACE>j` | Move cursor one window down    |
 
 #### 2.3 Resizing Different Windows
 Use the arrow keys to resize the current window.
@@ -119,7 +118,7 @@ Use the arrow keys to resize the current window.
 | `Space` `y` | Get yank history list |
 | `gd`        | Go to definition      |
 | `gr`        | List references       |
-| `gi`        | List implementation   |
+| `gl`        | List implementation   |
 | `gy`        | Go to type definition |
 
 #### NERDTree
@@ -139,8 +138,8 @@ Press `q` to leave Tagbar
 | Shortcut   | Action           | Command       |
 |------------|------------------|---------------|
 | `Ctrl` `p` | Active FZF       | `:FZF<Enter>` |
-| `Ctrl` `u` | Move up 1 item   | ` `           |
-| `Ctrl` `e` | Move down 1 item | ` `           |
+| `Ctrl` `k` | Move up 1 item   | ` `           |
+| `Ctrl` `j` | Move down 1 item | ` `           |
 
 #### Undotree
 
