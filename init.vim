@@ -220,8 +220,8 @@ map <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4i
 
 " Spelling Check with <space>sc
 map <LEADER>sc :set spell!<CR>
-noremap <C-x> ea<C-x>s
-inoremap <C-x> <Esc>ea<C-x>s
+noremap <C-s> ea<C-x>s
+inoremap <C-s> <Esc>ea<C-x>s
 
 " Press ` to change case (instead of ~)
 map ` ~
